@@ -79,8 +79,8 @@ em { font-style: normal; color: var(--blue); }
 .kicker span:last-child { background: linear-gradient(90deg, var(--cyan), transparent); }
 
 .hero h1 { font-size: clamp(72px, 10.5vw, 160px); line-height: 0.88; }
-.hero h1 span { display: block; -webkit-background-clip: text; background-clip: text; color: transparent; }
-.hero h1 .l1 { background-image: linear-gradient(180deg, #FFFFFF 0%, #CFC8FF 45%, #7D78FF 100%); }
+.hero h1 span { display: block; width: max-content; max-width: 100vw; -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero h1 .l1 { padding-top: 0.14em; margin-top: -0.14em; background-image: linear-gradient(180deg, #FFFFFF 0%, #CFC8FF 45%, #7D78FF 100%); }
 .hero h1 .l2 { background-image: linear-gradient(90deg, #8A5CFF 0%, #4F6BFF 55%, #12B8FF 100%); }
 .hero h1 .l2 i { font-style: normal; color: var(--cyan); -webkit-text-fill-color: var(--cyan); }
 .hero .lead { margin-top: 26px; }
