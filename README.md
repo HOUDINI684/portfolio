@@ -1,30 +1,22 @@
 # Portfolio – Stéphane Tossa
 
-Site statique (HTML/CSS). Aucune installation nécessaire.
+Site statique (HTML/CSS/JS). Aucune installation nécessaire.
+
+## Contenu
+- `index.html` : la page (textes, liens)
+- `style.css` : le design (couleurs en haut du fichier)
+- `script.js` : animations au défilement
+- `assets/portrait.webp` : ta photo détourée
 
 ## Aperçu en local
-Ouvre `index.html` dans ton navigateur, ou lance « Open with Live Server » dans VS Code.
+Ouvre `index.html` dans ton navigateur, ou utilise « Open with Live Server » dans VS Code.
 
-## Déployer sur Vercel
-
-### Option A – Glisser-déposer
-1. Va sur https://vercel.com/new et connecte-toi.
-2. Choisis l'import d'un dossier local (ou utilise l'option B ci-dessous).
-
-### Option B – Via GitHub (recommandé)
-1. Crée un dépôt GitHub `portfolio` et envoie-y ces fichiers.
-2. Sur Vercel : Add New > Project > importe le dépôt.
-3. Framework Preset : « Other ». Ne change rien d'autre, puis Deploy.
-4. Chaque `git push` met ensuite le site à jour automatiquement.
-
-### Option C – Ligne de commande
-```
-npm i -g vercel
-cd portfolio
-vercel --prod
-```
+## Mettre à jour le site déjà sur Vercel
+1. Ouvre ton dépôt GitHub `portfolio`.
+2. Add file > Upload files : envoie TOUS les fichiers de ce dossier, y compris le dossier `assets`.
+   Remplace les anciens `index.html` et `style.css`.
+3. Commit changes. Vercel redéploie tout seul en 1 minute.
 
 ## Personnaliser
-- Textes : `index.html`
-- Couleurs : variables en haut de `style.css`
-- Numéro WhatsApp, e-mail, LinkedIn : section « Contact » de `index.html`
+- Numéro WhatsApp, e-mail, LinkedIn : dans `index.html` (cherche `wa.me`, `mailto`, `linkedin`).
+- Couleurs : variables `:root` en haut de `style.css`.

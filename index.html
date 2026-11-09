@@ -4,94 +4,201 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Stéphane Tossa – Développeur web</title>
-<meta name="description" content="Stéphane Tossa, développeur web. Sites vitrines, applications web et boutiques en ligne pour l'Afrique francophone. Devis gratuit.">
+<meta name="description" content="Stéphane Tossa, développeur web au Bénin. Sites vitrines, applications web et boutiques en ligne pour l'Afrique francophone. Devis gratuit.">
 <meta property="og:title" content="Stéphane Tossa – Développeur web">
 <meta property="og:description" content="Sites vitrines, applications web et boutiques en ligne. Devis gratuit sur WhatsApp.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#FAF8F4">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F5C4A'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='34' font-weight='700' text-anchor='middle' fill='%23FAF8F4'%3ES%3C/text%3E%3C/svg%3E">
+<meta property="og:image" content="assets/portrait.webp">
+<meta name="theme-color" content="#04051A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2304051A'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='36' font-weight='800' text-anchor='middle' fill='%234F6BFF'%3ES%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
-<header class="header">
-  <div class="wrap header-in">
-    <a class="logo" href="#accueil">Stéphane Tossa</a>
-    <nav class="nav" aria-label="Navigation principale">
-      <a href="#services">Services</a>
-      <a href="#methode">Méthode</a>
-      <a href="#contact">Contact</a>
-    </nav>
+<!-- Barre latérale (devient barre du bas sur téléphone) -->
+<aside class="side">
+  <a class="side-logo" href="#accueil" aria-label="Accueil">S<span>.</span></a>
+  <nav class="side-nav" aria-label="Navigation principale">
+    <a href="#accueil" data-sec="accueil" aria-current="true">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 4l9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9Z"/></svg>
+      <span>Accueil</span>
+    </a>
+    <a href="#apropos" data-sec="apropos">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+      <span>À propos</span>
+    </a>
+    <a href="#projets" data-sec="projets">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 13h18"/></svg>
+      <span>Projets</span>
+    </a>
+    <a href="#competences" data-sec="competences">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></svg>
+      <span>Compétences</span>
+    </a>
+    <a href="#contact" data-sec="contact">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+      <span>Contact</span>
+    </a>
+  </nav>
+  <div class="side-social">
+    <a href="https://wa.me/22967419767" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.2-4.1A8 8 0 1 1 8.2 19L4 20Z"/><path d="M9 9c.3 2.3 2.7 4.7 5 5l1.2-1.2-1.8-1-.8.6c-.8-.4-1.5-1.1-1.9-1.9l.6-.8-1-1.8L9 9Z"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/st%C3%A9phane-tossa-03bb34417" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2.5 2.5 0 0 1 5 0v4M12 10v7"/></svg>
+    </a>
+    <a href="mailto:tossastephane7@gmail.com" aria-label="E-mail">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+    </a>
   </div>
-</header>
+</aside>
 
-<main id="accueil">
+<main class="main">
 
-  <section class="hero wrap">
-    <p class="eyebrow">Développeur web</p>
-    <h1>Des sites web clairs, rapides et qui donnent confiance.</h1>
-    <p class="lead">Je crée des sites vitrines, des applications web et des boutiques en ligne pour les entrepreneurs et les entreprises d'Afrique francophone.</p>
-    <div class="actions">
-      <a class="btn btn-primary" href="https://wa.me/22967419767?text=Bonjour%20St%C3%A9phane%2C%20je%20souhaite%20un%20devis%20pour%20un%20site%20web." target="_blank" rel="noopener">Demander un devis gratuit</a>
-      <a class="btn btn-ghost" href="#services">Voir les services</a>
+  <!-- ACCUEIL -->
+  <section id="accueil" class="hero">
+    <p class="avail"><i aria-hidden="true"></i>Disponible pour de nouveaux projets</p>
+
+    <div class="hero-text">
+      <p class="kicker"><span aria-hidden="true"></span>Développeur web<span aria-hidden="true"></span></p>
+      <h1><span class="l1">Stéphane</span><span class="l2">Tossa<i>.</i></span></h1>
+      <p class="lead">Je conçois des <strong>sites web</strong> et des <strong>applications</strong> rapides, soignés et pensés pour le téléphone, pour les entrepreneurs d'Afrique francophone.</p>
+      <div class="actions">
+        <a class="btn btn-neon" href="#projets">Voir mes projets <span aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="https://wa.me/22967419767?text=Bonjour%20St%C3%A9phane%2C%20je%20souhaite%20un%20devis%20pour%20un%20site%20web." target="_blank" rel="noopener">Me contacter</a>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <i class="spark s1" aria-hidden="true"></i><i class="spark s2" aria-hidden="true"></i><i class="spark s3" aria-hidden="true"></i>
+      <div class="neon">
+        <div class="frame">
+          <span class="orb" aria-hidden="true"></span>
+          <img class="portrait" src="assets/portrait.webp" width="900" height="900" alt="Portrait de Stéphane Tossa" fetchpriority="high">
+        </div>
+      </div>
+      <div class="badge"><strong>2 produits</strong><span>conçus de A à Z</span></div>
+    </div>
+
+    <a class="scroll" href="#apropos" aria-label="Défiler vers la suite"><span>Scroll</span><i aria-hidden="true"></i></a>
+  </section>
+
+  <!-- À PROPOS + SERVICES -->
+  <section id="apropos" class="section">
+    <div class="about">
+      <div class="about-title reveal">
+        <p class="kicker-sm">Qui suis-je</p>
+        <h2>Esprit créatif,<br><em>code précis.</em></h2>
+      </div>
+      <p class="about-text reveal">Je suis Stéphane, développeur web au Bénin. Je réalise des sites et des applications pour l'Afrique francophone, du site vitrine à la plateforme complète. J'ai conçu moi-même LOVEBOX et EDUProgress, de l'idée jusqu'à la mise en ligne.</p>
+      <ul class="facts reveal" aria-label="En bref">
+        <li><span class="ficon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 4 7v6c0 4 3.5 7 8 8 4.5-1 8-4 8-8V7l-8-4Z"/></svg></span><strong>2</strong><em>produits conçus</em></li>
+        <li><span class="ficon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span><strong>4</strong><em>langues possibles</em></li>
+        <li><span class="ficon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></span><strong>100 %</strong><em>adapté au mobile</em></li>
+        <li><span class="ficon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></span><strong>Gratuit</strong><em>devis sur demande</em></li>
+      </ul>
+    </div>
+
+    <div class="sub-head reveal"><h3>Ce que je réalise</h3></div>
+    <div class="grid3">
+      <article class="card reveal">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8M12 18v3"/></svg></div>
+        <h4>Sites vitrines</h4>
+        <p>Présentez votre activité avec un site professionnel, moderne et agréable à consulter sur téléphone.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></svg></div>
+        <h4>Applications web</h4>
+        <p>Plateformes sur mesure : espaces clients, formulaires, tableaux de bord et outils métier.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 7h12l-1 12H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></div>
+        <h4>Boutiques en ligne</h4>
+        <p>Vendez vos produits ou vos services en ligne avec un parcours d'achat simple pour vos clients.</p>
+      </article>
     </div>
   </section>
 
-  <section id="services" class="section wrap">
-    <h2>Ce que je réalise</h2>
-    <div class="grid">
-      <article class="card">
-        <h3>Sites vitrines</h3>
-        <p>Présentez votre activité avec un site professionnel, moderne et agréable sur téléphone.</p>
-      </article>
-      <article class="card">
-        <h3>Applications web</h3>
-        <p>Plateformes sur mesure : espaces clients, formulaires, tableaux de bord, outils métier.</p>
-      </article>
-      <article class="card">
-        <h3>Boutiques en ligne</h3>
-        <p>Vendez vos produits ou services en ligne, avec un parcours d'achat simple pour vos clients.</p>
-      </article>
+  <!-- PROJETS -->
+  <section id="projets" class="section">
+    <div class="section-head reveal">
+      <p class="kicker-sm">Projets</p>
+      <h2>Des produits que j'ai <em>conçus moi-même.</em></h2>
     </div>
-    <ul class="tags" aria-label="Points forts">
-      <li>Adapté au mobile</li>
-      <li>Sites multilingues</li>
-      <li>Mise en ligne incluse</li>
-      <li>Pensé pour les connexions limitées</li>
+    <div class="grid2">
+
+      <article class="project reveal">
+        <div class="project-visual lb" aria-hidden="true">
+          <svg viewBox="0 0 120 120" width="92" height="92" fill="none" stroke="#7FA0FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="22" y="48" width="76" height="52" rx="6"/><path d="M22 62h76M60 48v52"/><path d="M60 48c-8-22-30-18-24-6 4 8 18 6 24 6Zm0 0c8-22 30-18 24-6-4 8-18 6-24 6Z"/></svg>
+        </div>
+        <div class="project-body">
+          <p class="status status-live">En ligne</p>
+          <h3>LOVEBOX</h3>
+          <p>Plateforme de cadeaux émotionnels digitaux. On compose une LOVEBOX avec photos, vidéo, lettre, musique, quiz et mini-jeux. La personne qui la reçoit l'ouvre et la revisite quand elle veut.</p>
+          <ul class="chips"><li>React</li><li>Firebase</li><li>Cloudinary</li><li>Vercel</li></ul>
+          <a class="link" href="https://lovebox-lovat.vercel.app" target="_blank" rel="noopener">Voir le site <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project-visual edu" aria-hidden="true">
+          <svg viewBox="0 0 120 120" width="92" height="92" fill="none" stroke="#7FA0FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 44 60 22l48 22-48 22-48-22Z"/><path d="M30 54v22c0 6 13 14 30 14s30-8 30-14V54"/><path d="M108 44v28"/></svg>
+        </div>
+        <div class="project-body">
+          <p class="status">En développement</p>
+          <h3>EDUProgress</h3>
+          <p>Plateforme éducative pour les parents et leurs enfants : cours, exercices, évaluation et suivi de la progression par compétence. Première version ciblée sur le CM2, adaptée au contexte scolaire béninois.</p>
+          <ul class="chips"><li>React</li><li>Tailwind CSS</li><li>Firebase</li></ul>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- COMPÉTENCES + MÉTHODE -->
+  <section id="competences" class="section">
+    <div class="section-head reveal">
+      <p class="kicker-sm">Compétences</p>
+      <h2>Les outils que <em>j'utilise.</em></h2>
+    </div>
+    <ul class="skills reveal">
+      <li>HTML &amp; CSS</li><li>JavaScript</li><li>React</li><li>Vite</li><li>Tailwind CSS</li><li>Firebase</li><li>Vercel</li><li>Cloudinary</li><li>Python</li><li>Streamlit</li>
     </ul>
-  </section>
 
-  <section id="methode" class="section wrap">
-    <h2>Comment on travaille ensemble</h2>
+    <div class="sub-head reveal"><h3>Comment on travaille ensemble</h3></div>
     <ol class="steps">
-      <li><span class="num">1</span><div><h3>Brief</h3><p>Vous m'expliquez votre activité et ce que vous attendez du site.</p></div></li>
-      <li><span class="num">2</span><div><h3>Maquette</h3><p>Je vous montre le design avant de développer, pour valider ensemble.</p></div></li>
-      <li><span class="num">3</span><div><h3>Développement</h3><p>Je construis le site et vous suivez l'avancement.</p></div></li>
-      <li><span class="num">4</span><div><h3>Mise en ligne</h3><p>Je publie le site et vous explique comment l'utiliser.</p></div></li>
+      <li class="reveal"><span class="num">01</span><h4>Brief</h4><p>Vous m'expliquez votre activité et ce que vous attendez du site.</p></li>
+      <li class="reveal"><span class="num">02</span><h4>Maquette</h4><p>Je vous montre le design avant de développer, pour valider ensemble.</p></li>
+      <li class="reveal"><span class="num">03</span><h4>Développement</h4><p>Je construis le site et vous suivez l'avancement.</p></li>
+      <li class="reveal"><span class="num">04</span><h4>Mise en ligne</h4><p>Je publie le site et vous explique comment l'utiliser.</p></li>
     </ol>
   </section>
 
-  <section id="contact" class="section wrap contact">
-    <h2>Parlons de votre projet</h2>
-    <p class="lead">Écrivez-moi, la réponse est rapide. Le devis est gratuit.</p>
-    <div class="actions">
-      <a class="btn btn-primary" href="https://wa.me/22967419767?text=Bonjour%20St%C3%A9phane%2C%20je%20souhaite%20un%20devis%20pour%20un%20site%20web." target="_blank" rel="noopener">WhatsApp</a>
-      <a class="btn btn-ghost" href="mailto:tossastephane7@gmail.com">E-mail</a>
-      <a class="btn btn-ghost" href="https://www.linkedin.com/in/st%C3%A9phane-tossa-03bb34417" target="_blank" rel="noopener">LinkedIn</a>
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="cta reveal">
+      <p class="kicker-sm">Contact</p>
+      <h2>Parlons de <em>votre projet.</em></h2>
+      <p class="lead">Écrivez-moi, la réponse est rapide. Le devis est gratuit.</p>
+      <div class="actions">
+        <a class="btn btn-neon" href="https://wa.me/22967419767?text=Bonjour%20St%C3%A9phane%2C%20je%20souhaite%20un%20devis%20pour%20un%20site%20web." target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-ghost" href="mailto:tossastephane7@gmail.com">E-mail</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/st%C3%A9phane-tossa-03bb34417" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </div>
   </section>
 
+  <footer class="footer">
+    <span>© <span id="year">2026</span> Stéphane Tossa</span>
+    <span>Développeur web · Bénin</span>
+  </footer>
+
 </main>
 
-<footer class="footer">
-  <div class="wrap">© <span id="year">2026</span> Stéphane Tossa · Développeur web</div>
-</footer>
-
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+<script src="script.js"></script>
 </body>
 </html>
